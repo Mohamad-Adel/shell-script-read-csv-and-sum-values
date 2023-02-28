@@ -18,7 +18,7 @@ I have provided with some machine details like hostname, username, security key,
 
 ### Second, I filled the session section with the host name and saved the connection info for later use as showed:
 
-![image](https://user-images.githubusercontent.com/108706173/221866704-e327d372-ef9b-4312-ab74-ecac9653f942.png)
+![image](https://user-images.githubusercontent.com/108706173/221868577-c6303af0-52a3-4eef-9306-326a750ae695.png)
 
  
 And after opening the terminal I was asked to provide the user name “ubuntu” and the I connected successfully as showed:
