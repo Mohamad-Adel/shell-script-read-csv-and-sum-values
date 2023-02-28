@@ -1,0 +1,10 @@
+head -n 1 $@ #print the header line
+
+while read line  #begin the while loop with read command and line variable
+do
+   echo "Record is : $line"  #printing the line
+done < $1 #taking the source file path as variable
+
+
+csvformat -D "^" $1 | awk -F^ '{sum+=$6}END{print "The Sum of Values is:" sum}' > $2 #using csvformat from csvkit , we change the delimiter for the csv file from , to ^ because some columns contain a comma
+#and this may cause erros, after that we pipe to awk so sum the values in the 6th column and pipe the result to the target file path 
